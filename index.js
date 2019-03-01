@@ -9,7 +9,7 @@ const port = 4000
 // https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
 const cors = require('cors')
 
-// Basic idea is that your data will be sent pack in separate parts
+// Basic idea is that your data will be sent back in separate parts
 // and bodyparser is an express middleware that will help put the parts
 // back together
 // decent article https://medium.com/@adamzerner/how-bodyparser-works-247897a93b90
