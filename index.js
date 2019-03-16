@@ -17,6 +17,7 @@ const bodyParser = require('body-parser')
 
 // Monk is the middleware that allows express and your mongoDB to talk
 // you could also use mongoose
+//*****Monk No longer works with MongoDB Atlas--You will need to use another middleware */
 const monk = require('monk')
 // Put your url from your mongo atlas cluster below **make sure to add your collection name to the string**
 const url = 'add your mongo atlas link here'
