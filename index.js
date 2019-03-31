@@ -17,10 +17,12 @@ const bodyParser = require('body-parser')
 
 // Monk is the middleware that allows express and your mongoDB to talk
 // you could also use mongoose
-//*****Monk No longer works with MongoDB Atlas--You will need to use another middleware */
+
 const monk = require('monk')
+const MongoClient = require("mongodb").MongoClient;
+const ObjectId = require("mongodb").ObjectID;
 // Put your url from your mongo atlas cluster below **make sure to add your collection name to the string**
-const url = 'add your mongo atlas link here'
+const url = 'put your mongoDB string here- use the node.js version 2.2.12 version'
 
 // const db is how you set your database path. Here we use monk to 
 // talk to our mongo atlas database and console log that there is a connection
@@ -52,3 +54,4 @@ app.post('/',async function (req, res) {
 
 // Lets you know that the server is up and running
 app.listen(port, () => console.log(`App listening on port ${port}!`))
+
