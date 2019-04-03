@@ -32,7 +32,7 @@ const db = monk(url)
     console.log('connected')
   })
 // Below we are assigning our database to the variable people
-// using db.get(collection name from mongo atlas)
+// using db.get(database name from mongo atlas)
 const people = db.get('Senetors.Senetors_Collection')
 
 // We will use cors and bodyparser to be able to get the data back
